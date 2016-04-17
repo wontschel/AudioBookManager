@@ -1,12 +1,14 @@
 package jk.abm.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
-/**
- * Created by wontschel on 17.04.2016.
- */
+
+@Entity
+@Table(name="audiobook")
 public class AudioBook {
     @Id
     @Column(name="id")

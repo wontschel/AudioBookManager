@@ -13,7 +13,7 @@ import java.util.Date;
 public class AudioBookDaoTest {
 
     @Test
-    private void saveAudioBookTest(){
+    public void saveAudioBookTest(){
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 
         ctx.register(AppConfig.class);
@@ -27,6 +27,8 @@ public class AudioBookDaoTest {
         pdao.saveAudioBook(audioBook);
 
         System.out.println("Done");
+
+        assert(true);
 
     }
 
